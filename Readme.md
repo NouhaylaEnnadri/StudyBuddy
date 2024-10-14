@@ -1,30 +1,17 @@
+# StudyBuddy
 
-## Installation
+## Accessing the Client and Server
 
-To set up the project locally, follow these steps:
+```bash
+# For the client
+cd client
+npm install
+npm start
+# Access the client at http://localhost:3000
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/NouhaylaEnnadri/StudyBuddy.git
-   ```
-
-2. Navigate into the project directory:
-
-   ```bash
-   cd StudyBuddy/server
-   ```
-
-3. Install the dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Start the server using Nodemon (for development):
-
-   ```bash
-   npm run dev
-   ```
-
-5. The server should be running at `http://localhost:3000`.
+# For the server
+cd server
+npm install
+npm run dev
+# Access the server at http://localhost:3001
+```
