@@ -1,5 +1,5 @@
 
-```markdown
+
 # StudyBuddy
 
 A simple web application to help students organize their study materials.
