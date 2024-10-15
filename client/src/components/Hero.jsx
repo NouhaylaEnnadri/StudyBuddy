@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="text-white py-12">
+    <div className="text-white py-12 mt-16">
       <div className="container mx-auto p-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Main Hero Section */}
@@ -45,7 +45,7 @@ const Hero = () => {
                 <i data-feather="users" className="mb-2"></i>
                 <span>Student-Driven</span>
               </a>
-             
+
               <a
                 href="#"
                 className="flex flex-col items-center bg-gray-700 hover:bg-gray-600 transition-colors duration-200 p-4 rounded-lg"

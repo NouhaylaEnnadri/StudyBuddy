@@ -8,7 +8,9 @@ const Navbar = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
   return (
-    <nav className="w-full mt-6">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-base-100 mt-6 mb-12">
+      {" "}
+      {/* Fixed Navbar */}
       <div className="container mx-auto px-4 flex justify-between items-center h-16">
         {/* Left: Logo (hidden when search is active on mobile) */}
         {!isSearchVisible && (
@@ -91,7 +93,6 @@ const Navbar = () => {
           </div>
         )}
       </div>
-
       {/* Burger Menu Items (shown when burger menu is clicked) */}
       {isMenuVisible && !isSearchVisible && (
         <div className="md:hidden flex flex-col items-center space-y-4 mt-4">
