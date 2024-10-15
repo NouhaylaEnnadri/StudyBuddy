@@ -1,84 +1,125 @@
-import React from "react";
+import React, { useEffect } from "react";
+import "tailwindcss/tailwind.css";
+import feather from "feather-icons";
+import { logo } from "../assets";
 
 const Hero = () => {
+  useEffect(() => {
+    feather.replace(); // Initialize Feather icons
+  }, []);
+
+  const BentoItem = ({ children, className }) => {
+    return <div className={`rounded-lg p-6 ${className}`}>{children}</div>;
+  };
+
   return (
-    <div className="py-4 px-2 lg:py-10 lg:px-0">
-      {" "}
-      {/* Added padding for mobile */}
-      <div className="mx-auto max-w-2xl lg:max-w-7xl">
-        <div className="mt-10 grid gap-4 lg:grid-cols-3 lg:grid-rows-2">
-          {/* Left Section: Share Your Courses */}
-          <div className="relative lg:row-span-2">
-            <div className="absolute inset-px rounded-lg bg-primary opacity-30 lg:rounded-l-[2rem]"></div>
-            <div className="relative flex h-48 flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
-              <div className="px-4 pb-3 pt-4 sm:px-6 sm:pb-0 sm:pt-6">
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Share Your Courses
-                </p>
-                <p className="mt-2 max-w-lg text-sm text-gray-600 max-lg:text-center">
-                  Contribute to our community by sharing your course
-                  experiences. Help others find the best courses that suit their
-                  needs and inspire them to explore new learning opportunities!
-                </p>
-              </div>
-              <div className="relative min-h-[15rem] w-full grow"></div>
-            </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
-          </div>
+    <div className=" text-white py-12">
+      <div className="container mx-auto p-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <BentoItem className="md:col-span-2 bg-secondary bg-opacity-30">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Unleash Your Creativity
+            </h1>
+            <p className="text-xl text-purple-200">
+              Build extraordinary tools that push the boundaries of what's
+              possible.
+            </p>
+            <a
+              href="#"
+              className="inline-flex items-center text-white bg-secondary bg-opacity-35 hover:bg-secondary transition-colors duration-200 font-semibold py-2 px-4 rounded-lg mt-6 w-max"
+            >
+              Get Started
+              <i data-feather="arrow-right" className="ml-2"></i>
+            </a>
+          </BentoItem>
 
-          {/* Middle Section: Course Reviews */}
-          <div className="relative max-lg:row-start-1">
-            <div className="absolute inset-px rounded-lg bg-secondary opacity-30 max-lg:rounded-t-[2rem]"></div>
-            <div className="relative flex h-48 flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
-              <div className="px-4 pt-4 sm:px-6 sm:pt-6">
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Course Reviews
-                </p>
-                <p className="mt-2 max-w-lg text-sm text-gray-600 max-lg:text-center">
-                  Read detailed reviews from fellow students to make informed
-                  decisions about your next course. Discover what others loved
-                  and learn from their insights.
-                </p>
-              </div>
+          <BentoItem className="bg-base-300">
+            <h2 className="text-2xl font-semibold mb-4">Quick Access</h2>
+            <div className="grid grid-cols-2 gap-4">
+              <a
+                href="#"
+                className="flex flex-col items-center bg-gray-700 hover:bg-gray-600 transition-colors duration-200 p-4 rounded-lg"
+              >
+                <i data-feather="code" className="mb-2"></i>
+                <span>Code</span>
+              </a>
+              <a
+                href="#"
+                className="flex flex-col items-center bg-gray-700 hover:bg-gray-600 transition-colors duration-200 p-4 rounded-lg"
+              >
+                <i data-feather="layout" className="mb-2"></i>
+                <span>Design</span>
+              </a>
+              <a
+                href="#"
+                className="flex flex-col items-center bg-gray-700 hover:bg-gray-600 transition-colors duration-200 p-4 rounded-lg"
+              >
+                <i data-feather="terminal" className="mb-2"></i>
+                <span>CLI</span>
+              </a>
+              <a
+                href="#"
+                className="flex flex-col items-center bg-gray-700 hover:bg-gray-600 transition-colors duration-200 p-4 rounded-lg"
+              >
+                <i data-feather="settings" className="mb-2"></i>
+                <span>Settings</span>
+              </a>
             </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
-          </div>
+          </BentoItem>
 
-          {/* Right Section: Discover New Learning Paths */}
-          <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
-            <div className="absolute inset-px rounded-lg bg-accent opacity-30"></div>
-            <div className="relative flex h-48 flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-              <div className="px-4 pt-4 sm:px-6 sm:pt-6">
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Discover New Learning Paths
-                </p>
-                <p className="mt-2 max-w-lg text-sm text-gray-600 max-lg:text-center">
-                  Explore new subjects and skill sets tailored to your
-                  interests. Find recommended courses based on trending topics
-                  and personal preferences!
-                </p>
-              </div>
-            </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
-          </div>
+          {/* Additional Bento Items */}
+          <BentoItem className="bg-primary bg-opacity-20">
+            <img
+              src={logo}
+              alt="Feature Spotlight"
+              className=" h-24 rounded-lg mb-4"
+            />
+            <h2 className="text-2xl font-semibold mb-2">
+              AI-Powered Workflows
+            </h2>
+            <p className="text-green-100">
+              Harness the power of artificial intelligence to automate and
+              optimize your daily tasks.
+            </p>
+          </BentoItem>
 
-          {/* Bottom Section: Engage with Your Learning Community */}
-          <div className="relative lg:row-span-2">
-            <div className="absolute inset-px rounded-lg bg-primary opacity-30 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
-            <div className="relative flex h-48 flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
-              <div className="px-4 pb-3 pt-4 sm:px-6 sm:pb-0 sm:pt-6">
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Engage with Your Learning Community
-                </p>
-                <p className="mt-2 max-w-lg text-sm text-gray-600 max-lg:text-center">
-                  Join a vibrant community of learners sharing knowledge,
-                  experiences, and inspiration. Help others in their educational
-                  journey while enhancing your own!
-                </p>
-              </div>
+          <BentoItem className="bg-accent bg-opacity-15">
+            <h2 className="text-2xl font-semibold mb-4">Community Showcase</h2>
+            <div className="flex space-x-4 mb-4">
+              <img
+                src="https://picsum.photos/200"
+                alt="User 1"
+                className="w-10 h-10 rounded-full"
+              />
+              <img
+                src="https://picsum.photos/200"
+                alt="User 2"
+                className="w-10 h-10 rounded-full"
+              />
+              <img
+                src="https://picsum.photos/200"
+                alt="User 3"
+                className="w-10 h-10 rounded-full"
+              />
             </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
-          </div>
+            <p className="text-gray-300">
+              Join thousands of developers building amazing tools and sharing
+              their creations.
+            </p>
+          </BentoItem>
+
+          <BentoItem className="bg-gradient-to-br from-secondary to-accent text-gray-900">
+            <i data-feather="zap" className="mb-4 w-12 h-12"></i>
+            <h2 className="text-2xl font-semibold mb-2">
+              Lightning Fast Updates
+            </h2>
+            <p>
+              Our latest release brings 2x performance improvements and new
+              customization options.
+            </p>
+          </BentoItem>
+
+         
         </div>
       </div>
     </div>

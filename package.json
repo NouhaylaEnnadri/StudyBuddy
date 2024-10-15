@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "feather-icons": "^4.29.2",
+    "react-feather": "^2.0.10",
+    "swiper": "^11.1.14"
+  }
+}
