@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-base-100 mt-6 mb-12">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-base-100 pt-6 mb-12">
       {" "}
       {/* Fixed Navbar */}
       <div className="container mx-auto px-4 flex justify-between items-center h-16">
