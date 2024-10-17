@@ -11,7 +11,6 @@ function App() {
         <Route path="/" element={<Home />} />
 
         <Route path="/login" element={<Login />} />
-        {/* Add other routes here */}
       </Routes>
     </Router>
   );
