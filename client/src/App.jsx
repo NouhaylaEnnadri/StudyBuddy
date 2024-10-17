@@ -1,10 +1,20 @@
-import { Hero, Navbar } from "./components";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Login from "./pages/Login"; // Assuming Login component exists
+import Hero from "./components/Hero";
+import Home from "./pages/Home";
 
-export default function App() {
+function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/login" element={<Login />} />
+        {/* Add other routes here */}
+      </Routes>
+    </Router>
   );
 }
+
+export default App;

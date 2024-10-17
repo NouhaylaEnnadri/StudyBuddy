@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FiSearch, FiUser, FiMenu, FiX } from "react-icons/fi";
 import { logo } from "../assets";
 import DarkLight from "./DarkLight";
+import { Link } from "react-router-dom"; // Import Link from React Router
 
 const Navbar = () => {
   const [isSearchVisible, setIsSearchVisible] = useState(false);
@@ -69,12 +70,12 @@ const Navbar = () => {
             </button>
             {/* Log In, Register, Profile (hidden on mobile, shown in burger menu) */}
             <div className="hidden md:flex items-center space-x-4">
-              <a
-                href="/login"
+              <Link
+                to="/login"
                 className="bg-secondary bg-opacity-15 text-base-content px-4 py-2 rounded-md hover:bg-secondary hover:bg-opacity-30 transition-colors"
               >
                 Log In
-              </a>
+              </Link>
               <a
                 href="/register"
                 className="text-secondary border border-secondary rounded-md px-4 py-2 hover:text-accent"
@@ -96,9 +97,10 @@ const Navbar = () => {
       {/* Burger Menu Items (shown when burger menu is clicked) */}
       {isMenuVisible && !isSearchVisible && (
         <div className="md:hidden flex flex-col items-center space-y-4 mt-4">
-          <a href="/login" className="text-secondary hover:text-primary">
-            Log In
-          </a>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            {/* Add other routes here */}
+          </Routes>
           <a href="/register" className="text-secondary hover:text-primary">
             Register
           </a>
