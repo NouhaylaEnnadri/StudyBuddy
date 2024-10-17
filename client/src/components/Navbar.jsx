@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FiSearch, FiUser, FiMenu, FiX } from "react-icons/fi";
 import { logo } from "../assets";
 import DarkLight from "./DarkLight";
-import { Link } from "react-router-dom"; // Import Link from React Router
+import { Link } from "react-router-dom"; 
 
 const Navbar = () => {
   const [isSearchVisible, setIsSearchVisible] = useState(false);
