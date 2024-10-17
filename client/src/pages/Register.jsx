@@ -1,17 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { logo } from "../assets";
 
 const Register = () => {
   return (
     <div>
-      <section className="bg-primary-600">
+      <section className="bg-primary-600  py-16">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a
             href="#"
             className="flex items-center mb-6 text-2xl font-semibold text-gray-900"
           >
             <img
-              className="w-8 h-8 mr-2"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
+              className="w-16 h-16 mr-2"
+              src={logo}
               alt="logo"
             />
             StudyBuddy
@@ -113,13 +115,14 @@ const Register = () => {
                     Forgot password?
                   </a>
                 </div>
-
-                <button
-                  type="submit"
-                  className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-                >
-                  Sign up
-                </button>
+                <Link to="/">
+                  <button
+                    type="submit"
+                    className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                  >
+                    Sign up
+                  </button>
+                </Link>
                 <p className="text-sm font-light text-gray-500">
                   Already have an account?{" "}
                   <a
