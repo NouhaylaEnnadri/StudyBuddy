@@ -3,32 +3,89 @@
       "title": "Javascript Bootcamp for Absolute Beginners",
       "level": "Beginner Friendly",
       "price": "FREE",
-      "duration": "1:34:23 Minutes",
-      "parts": "3 Parts",
       "tags": ["Vanilla JS"],
-      "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-      "buttonLabel": "Buy Lesson"
+      "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "buttonLabel": "Check The course"
     },
     {
       "title": "Write a Gatsby plugin using Typescript",
       "level": "Intermediate",
       "price": "$12",
-      "discount": "%20 Discount",
-      "duration": "1:34:23 Minutes",
-      "parts": "3 Parts",
       "tags": ["TypeScript"],
-      "image": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
-      "buttonLabel": "Start Watching Now"
+      "image": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "buttonLabel": "Check the course"
     },
     {
       "title": "Advanced React Native for Sustainability",
       "level": "Beginner Friendly",
       "price": "$50",
-      "duration": "1:34:23 Minutes",
-      "parts": "3 Parts",
-      "tags": ["Vanilla JS"],
-      "image": "https://images.unsplash.com/photo-1561835491-ed2567d96913?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
-      "buttonLabel": "Buy Lesson"
+      "tags": ["React Native"],
+      "image": "https://images.unsplash.com/photo-1561835491-ed2567d96913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "buttonLabel": "Check the course"
+    },
+    {
+      "title": "Building RESTful APIs with Node.js",
+      "level": "Intermediate",
+      "price": "$20",
+      "tags": ["Node.js", "APIs"],
+      "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "buttonLabel": "Check the course"
+    },
+    {
+      "title": "React for Beginners",
+      "level": "Beginner Friendly",
+      "price": "FREE",
+      "tags": ["React"],
+      "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "buttonLabel": "Check the course"
+    },
+    {
+      "title": "Introduction to Data Science with Python",
+      "level": "Intermediate",
+      "price": "$30",
+      "tags": ["Python", "Data Science"],
+      "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "buttonLabel": "Check the course"
+    },
+    {
+      "title": "Machine Learning Basics",
+      "level": "Advanced",
+      "price": "$60",
+      "tags": ["Machine Learning", "AI"],
+      "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "buttonLabel": "Check the course"
+    },
+    {
+      "title": "CSS Grid and Flexbox for Responsive Layouts",
+      "level": "Beginner Friendly",
+      "price": "$15",
+      "tags": ["CSS", "Web Design"],
+      "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "buttonLabel": "Check the course"
+    },
+    {
+      "title": "Full-Stack Development with MERN",
+      "level": "Advanced",
+      "price": "$75",
+      "tags": ["MERN", "Full-Stack"],
+      "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "buttonLabel": "Check the course"
+    },
+    {
+      "title": "Exploring Cloud Computing with AWS",
+      "level": "Intermediate",
+      "price": "$40",
+      "tags": ["AWS", "Cloud Computing"],
+      "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "buttonLabel": "Check the course"
+    },
+    {
+      "title": "Cybersecurity Essentials",
+      "level": "Advanced",
+      "price": "$90",
+      "tags": ["Cybersecurity"],
+      "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "buttonLabel": "Check the course"
     }
   ]
   

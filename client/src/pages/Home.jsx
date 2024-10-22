@@ -1,12 +1,13 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
+import { Categories, Course, Hero, Navbar } from "../components";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-gradient-to-b from-base-100 via-base-200 to-base-300 ">
       <Navbar />
       <Hero />
+      <Categories />
+      <Course />
     </div>
   );
 };
