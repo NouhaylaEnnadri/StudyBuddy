@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Categories, Course, Hero, Navbar } from "../components";
 
 const Home = () => {
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
   return (
-    <div className="bg-gradient-to-b from-base-100 via-base-200 to-base-300 ">
+    <div>
       <Navbar />
       <Hero />
-      <Categories />
-      <Course />
+      <Categories onSelectCategory={setSelectedCategory} />
+      <Course selectedCategory={selectedCategory} />
     </div>
   );
 };
